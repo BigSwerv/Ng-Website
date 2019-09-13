@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Yantramanav:100,300');
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100,300');Ss
 
 /* ------------- */
 /* GLOBAL STYLES */
@@ -7,6 +7,12 @@
 * {
   box-sizing: border-box;
 }
+
+a{
+  color: black;
+  font-family: 'Yanone Kaffeesatz';
+}
+
 
 body {
   background: #3952a3;
@@ -36,8 +42,18 @@ ul {
 }
 
 .brand span {
-  color: #ffffff;
+  color: black;
+
 }
+li{
+  font-family: 'apple system', sans-serif;
+}
+ 
+span{
+  font-size: 20px;
+}
+
+
 
 .wrapper {
   box-shadow: 0 0 20px 0 rgba(57, 82, 163, 0.7);
@@ -57,8 +73,11 @@ ul {
     left: 222px;
 }
 .company-info {
+  color: black;
   border-top-right-radius: 4px;
-  background-image: linear-gradient(white,grey); }
+  background-image: linear-gradient(white,grey);
+  font-size: 20px;
+ }
 
 .company-info h3,
 .company-info ul {
@@ -69,64 +88,27 @@ ul {
 /* ------- */
 /* CONTACT */
 /* ------- */
+.label{
+font-size: 200%;
+text-decoration:underline;
+}
 
 .contact {
   background-image: linear-gradient(white,grey); 
     border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+
 }
+
+.contact, .titles{
+  padding-left: 200px;
+}
+
 
 /* ---- */
 /* FORM */
 /* ---- */
 
-.contact form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-}
-
-.contact form label {
-  display: block;
-}
-
-.contact form p {
-  margin: 0;
-}
-
-.contact form .full {
-  grid-column: 1 / 3;
-}
-
-.contact form button,
-.contact form input,
-.contact form textarea {
-  width: 100%;
-  padding: 1em;
-  border: solid 1px #627EDC;
-  border-radius: 4px;
-}
-
-.contact form textarea {
-  resize: none;
-}
-
-.contact form button {
-  background: #627EDC;
-  border: 0;
-  color: #e4e4e4;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.contact form button:hover,
-.contact form button:focus {
-  background: #3952a3;
-  color: #ffffff;
-  outline: 0;
-  transition: background-color 2s ease-out;
-}
 
 /* ------------- */
 /* MEDIA QUERIES */
@@ -136,10 +118,12 @@ ul {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    
   }
 
   .wrapper > * {
     padding: 2em;
+    background-image: linear-gradient(to top, lightgrey , #ff8400);
   }
 
   .company-info {
@@ -169,8 +153,7 @@ ul {
 }
 
 
-element.style {
-}
+
 #form_wrap {
     overflow: hidden;
     height: 446px;
@@ -191,31 +174,39 @@ user agent stylesheet
 div {
     display: block;
 }
-body {
-    background: #ccc url('/edit_media/2012/201211/20121104/contactform/images/bg_out.png' );
-    color: #7c7873;
-    font-family: 'YanoneKaffeesatzRegular';
-}
-user agent stylesheet
-html {
-    color: -internal-root-color;
-}
-#form_wrap:before {
-    content: "";
-    position: absolute;
-    bottom: 128px;
-    left: 0px;
-    background: url('/edit_media/2012/201211/20121104/contactform/images/before.png');
-    width: 530px;
-    height: 316px;
+
+
+
+body {font-family: 'Yantramanav', sans-serif;
+  ;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-#form_wrap:after {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  background: url('/edit_media/2012/201211/20121104/contactform/images/after.png');
-  width: 530px;
-  height: 260px;
+input[type=submit] {
+  background-color: #818285;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #818285;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
