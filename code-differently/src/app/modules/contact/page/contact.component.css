@@ -45,11 +45,13 @@ ul {
 
 .brand span {
   color: #818285;
-  font-size: 200 !important ; 
-  font-weight: 400% !important
-
-
 }
+
+.bold{
+  font-size: 200%;
+  font-weight: 100
+}
+
 li{
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
